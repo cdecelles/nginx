@@ -4,7 +4,7 @@
 
 Instructions used to build module - https://nivethan.dev/devlog/nginx-and-webdav-extended.html
 
-Detailed steps are in build-module.txt
+Detailed steps are in [build-module.txt](https://github.com/cdecelles/nginx/blob/main/build-module.txt)
 
 # Build the container
 
