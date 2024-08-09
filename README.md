@@ -1,5 +1,10 @@
-## Nginx module build
+## Nginx http_dav_module 
 
+# Build the http_dav_module
+
+Instructions used to build module - https://nivethan.dev/devlog/nginx-and-webdav-extended.html
+
+Detailed steps are in build-module.txt
 
 # Build the container
 
