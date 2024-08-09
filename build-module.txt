@@ -1,0 +1,17 @@
+Instructions from here - https://nivethan.dev/devlog/nginx-and-webdav-extended.html
+
+docker run -it  -u root --entrypoint sh  cgr.dev/chainguard/gcc-glibc:latest-dev
+
+wget https://nginx.org/download/nginx-1.27.0.tar.gz
+tar xvf nginx-1.27.0.tar.gz
+git clone https://github.com/arut/nginx-dav-ext-module.git
+cd nginx-1.27.0/
+
+apk update
+apk add pcre-dev zlib-dev libxml2-dev  libxslt-dev
+
+./configure --with-compat --with-http_dav_module --add-dynamic-module=../nginx-dav-ext-module/
+
+# example copy of module
+docker cp 2ab525b05e63:/work/nginx-1.27.0/objs/ngx_http_dav_ext_module.so /Users/GitHub/Dockerfiles/nginx
+
